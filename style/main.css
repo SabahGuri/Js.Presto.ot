@@ -1,0 +1,275 @@
+.myColor{
+    color: #E26D5C;
+}
+
+.main-title{
+    font-size:3rem ;
+    letter-spacing:1.5px ;
+    font-weight: bold;
+}
+
+#hero{
+    height: 600px;
+    background-image:url("../images/parallax.jpg");
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+
+}
+
+#hero .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hero .blur{
+    background-color: rgba(22, 140, 186, 0.35);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+.nav-link{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+
+.myNavbar{
+    background-color: #E26D5C !important;
+}
+.myCard{
+    background-color:  #E26D5C;
+    
+}
+
+#categorySelect{
+    font-weight: 500;
+    color: #E26D5C;
+}
+
+#searchInput::placeholder{
+    font-weight: 500;
+    color: #E26D5C;
+    
+    
+}
+
+.max-min::placeholder{
+    font-weight: 500;
+    color: #E26D5C;
+}
+
+#button{
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+.icons{
+    color: #E26D5C;
+}
+
+
+.category-cards{
+    border-style: dashed ;
+    border-color: #E26D5C;
+    transition: all ease .255s;
+    outline: rgba(22, 148, 186, 0.15) solid 4px;
+}
+
+
+
+
+.category-cards:hover{
+    background-color: #E26D5C; 
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s !important;
+    transform: translateY(-10px)!important;
+}
+
+.category-cards:hover .icons{
+    color: white;
+}
+
+
+
+
+.select-button{
+    /* dare senso 3D al bottone */
+    display: inline-block !important;
+    border: none !important;
+    border-radius: 10px !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3) !important;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 600;
+    color: #E26D5C;
+
+
+}
+
+.select-button:hover{
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3) !important;
+    color: #E26D5C ; 
+    
+}
+
+.select-button:active{
+    transform: translateY(1px) !important;
+    box-shadow: 0,2px 4px rgba(0,0,0,0.3) !important;
+}
+
+
+
+#contact{
+    background-image: url(../images/contact-background.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative; 
+    outline: rgba(22, 148, 186, 0.15) solid 4px;
+    height: 800px;
+}  
+
+#contact img{
+    height: 650px;
+    width: 650px;
+    border-radius: 10px;
+}
+
+
+
+#contact .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contact .blur{
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+#contctFormEmailInput::placeholder{
+    color: #E26D5C;
+}
+
+#contacFromInput::placeholder{
+    color: #E26D5C;
+}
+
+#cta{
+    background-image: url(../images/cto-image.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: rgba(22, 148, 186, 0.15) solid 4px;
+    position: relative;
+    background-attachment: fixed;
+    height: 500px;
+
+}
+
+
+#cta .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cta .blur{
+    background-color: rgba(22, 140, 186, 0.35);
+    backdrop-filter: blur(5px);
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+
+.announcement-card{
+    outline: rgba(207, 74, 3, 0.35) solid 4px;
+    position: relative;
+    transition: all ease .255s;
+
+}
+
+.announcement-card:hover{
+    outline: rgba(207, 74, 3, 0.35)solid 6px;
+
+}
+
+.announcement-card .carousel{
+    border-radius: 10px 10px 0 0 ;
+    overflow: hidden;
+    border-bottom: solid 8px rgba(207, 74, 3, 0.35);
+    max-height: 220px;
+}
+
+.announcement-card .card-footer{
+    border-style: dashed ;
+    border-color: #E26D5C;
+    border-bottom: none;
+    border-left:none ;
+    border-right: none;
+
+}
+
+.announcement-card .col-6:nth-child(1){
+    border-right: dashed 1px #E26D5C ;
+}
+
+.announcement-card .badge{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+   
+}
+
+
+
+
+
+
+

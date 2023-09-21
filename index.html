@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Presto.it</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/mediaqueris.css">
+  </head>
+    
+
+
+  <body>
+
+    <!-- nabar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top myNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="h2">Presto.it</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link " href="#">ANNUNCI</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+               CATEGORIE
+              </a>
+              <ul class="dropdown-menu" id="dropdownMenu">
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
+            <a class="nav-link me-2 " href="#">CHI SIAMO</a>
+            <a class="nav-link me-2 " href="#">CONTATTI</a>
+          </ul>
+          <button class="btn btn-light btn-lg navBtn select-button">Crea annuncio</button>
+        </div>
+      </div>
+    </nav>
+    <!-- navar end -->
+    
+    
+    <!-- hero -->
+    <section id="hero">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center pt-5">
+              <h1 class="h1 main-title text-white">
+                Trova i migliori affari <br>
+                nella tua città
+              </h1>
+            </div>
+          </div>
+          <div class="row mt-3 mt-lg-5 ">
+            <p class="h5 text-center text-white">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem facilis tempora cum quos nam sit fugiat exercitationem ad magni at.
+            </p>
+          </div>
+          <div class="row ">
+            <div class="col-12 mt-2 mt-lg-5">
+              <!-- searchrbar -->
+
+              <div id="searchbar" class="shadow-lg">
+                <div class="card shadow-none">
+                  <div class="card-body myCard">
+                    <form>
+                      <div class="row">
+                        <div class="col-12 col-lg-3 mb-3">
+                          <input id="searchInput" type="text" class="form-control form-control-lg mt-2" placeholder="Cerca annunci..." >
+                          
+                        </div>
+                        <!-- select -->
+                        <div class="col-12 col-lg-3 mb-3 ">
+                          <select id="categorySelect" class="form-control form-control-lg mt-2">
+                            <option value="" selected>
+                              Seleziona categoria
+                            </option>
+                            <!-- parte javascript -->
+                          </select>
+                          
+                        </div>
+                        <div class="col-12 col-lg-3 mb-3 mb-lg-3">
+                          <div class="row">
+                            <div class="col-6 mb-3 mb-lg-4">
+                              <input  type="text" placeholder="Min..." class="  form-control form-control-lg mt-2"/>
+                            </div>
+                            <div class="col-6 mb-3 mb-lg-3">
+                              <input type="text" placeholder="Max..." class="  form-control form-control-lg mt-2"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-3 mb-3 mb-lg-3 d-grid ">
+    
+                          <button id="button" type="submit" class="btn btn-light btn-outline-tertiary btn-lg select-button " style="color: #E26D5C ; font-weight: 500;">Cerca</button>
+                          
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    <div class="blur"></div>
+      
+    </section>
+
+    <!-- categories  -->
+
+    <section id="category-container" class="py-5 container">
+      <div class="container">
+        <div class="row" id="">
+          <div class="col-12 text-center">
+            <p class="h1 main-title">Le nostre <span style="color: #E26D5C ;font-weight: bold;">Categorie</span></p>
+            <p class="h6 text-center mb-5">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nobis quis cum? Repellendus quibusdam quam commodi nostrum veniam tempore aspernatur eum dolorum beatae earum, totam libero quod accusantium voluptate vitae.</p>
+          </div>
+          <div class="row" id="cardsContainer">
+            <!-- parte js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+
+    <section id="contact" class="py-5">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 d-none d-lg-block" >
+              <img src="./images/contact-img.jpg" class="img-fluid shadow"  alt=""/>
+            </div>
+            <div class="col-12 col-lg-6">
+
+              <p class="h1 text-white text-center">
+                LAVORA CON NOI
+              </p>
+
+              <p class="h5 text-white text-center">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ut quasi sapiente soluta laborum et, hic sed mollitia quia vel!
+              </p>
+              <form id="contactForm" class="mt-5">
+                <div class="mb-3 mb-lg-5">
+                  <input type="text" id="contacFromInput" placeholder="Nome e Cognome..." class="form-control form-control-lg" required/>
+                </div>
+                <div class="mb-3 mb-lg-5">
+                  <input type="email" id="contctFormEmailInput" placeholder="email..."
+                  class="form-control form-control-lg" required/>
+                </div>
+                <div class="mb-3 mb-lg-4">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="formMassage" style="height: 100px;" ></textarea>
+                    <label for="formMassage" style="color: #E26D5C;">Parlaci di te</label>
+                  </div>
+                </div>
+                <button class="btn btn-light btn-lg select-button" type="submit">Invia cadidatura</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blur"></div>
+
+
+    </section>
+
+    
+    <!-- ultimi annunci -->
+    <section id="latest" class="py-5">
+      <div class="container">
+        <div class="row">
+          <p class="h1 text-center mb-5 main-title" >Gli ultimi <span class="myColor main-title">annunci</span></p>
+        </div>
+        <div id="lastAnnouncements" class="row">
+          <!-- js part -->
+        </div>
+      </div>
+    </section>
+    <!-- call to action -->
+    <section id="cta" class="py-5 mt-5 mb-5">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="h1 main-title text-white">
+                Presto.it
+              </p>
+              <p class="h4 text-white">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci aliquid odit necessitatibus facilis inventore veritatis voluptatum tempora.
+
+              </p>
+              <a href="annunci" class="btn btn-light btn-lg select-button">Scopri nuovi annunci</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blur"></div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <p class="h3 text-info mb-4">
+              Get in touch
+            </p>
+            <p class="text-white">
+              123 Street, New York, USA
+            </p>
+            <p class=" text-white">
+              +39 1234567890
+            </p>
+            <p class=" text-white">
+              info@example.com
+            </p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="h3 text-white mb-4">
+              Quick links
+            </p>
+
+            <p><a href="" class="text-white">About us</a></p>
+            <p><a href="" class="text-white">Contact us</a></p>
+            <p><a href="" class="text-white">FAQ</a></p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="h3 text-white mb-4">
+              Newsletter
+            </p>
+            <p class="text-white"> 
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis.
+            </p>
+            <form id="newsletterForm">
+              <div class="input-group">
+                <input id="newslettetInput" type="text"  class="form-control form-control-lg" placeholder="Email">
+                <button class="btn btn-light select-button ms-2">Iscriviti</button>
+              </div>
+              <div id="invalidNewsletterInput" class="invalid-feedback">
+                <!--  -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- modals -->
+    <div id="firstModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <div class="modal-body">
+            <p>Grazie per averci scritto!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">chiudi</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <script src="scripts/categories.js"></script>
+    <script src="./scripts/announcements.js"></script>
+    <script src="scripts/presto.js"></script>
+  </body>
+</html>
